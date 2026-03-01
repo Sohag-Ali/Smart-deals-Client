@@ -3,12 +3,12 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDrX1BuwmwBxrtFvRa3WT_Ehhemviusdgg",
-  authDomain: "smaart-deals.firebaseapp.com",
-  projectId: "smaart-deals",
-  storageBucket: "smaart-deals.firebasestorage.app",
-  messagingSenderId: "563851816234",
-  appId: "1:563851816234:web:50c7dbdf7fd3df597fc253"
+  apiKey: import.meta.env.VITE_APIKEY,
+  authDomain: import.meta.env.VITE_AUTHDOMAIN,
+  projectId: import.meta.env.VITE_PROJECTID,
+  storageBucket: import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGINGSENDERID,
+  appId: import.meta.env.VITE_APPID,
 };
 
 // Initialize Firebase

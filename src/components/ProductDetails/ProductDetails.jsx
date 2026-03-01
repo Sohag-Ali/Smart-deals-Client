@@ -74,6 +74,13 @@ const ProductDetails = () => {
             showConfirmButton: false,
             timer: 1500,
           });
+
+          //add the new bid 
+          newBids._id = data.insertedId
+          const newBid = [...bids, newBids];
+          newBid.sort((a,b) => b.bid_price - a.bid_price)
+          setBids(newBid);
+          e.target.reset();
         }
       });
   };
